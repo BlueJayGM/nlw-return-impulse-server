@@ -15,4 +15,4 @@ app.use(express.json());
 app.use(routes);
 
 
-app.listen(4040, () => console.log("Server listening on 4040!"));
+app.listen(process.env.PORT || 4040, () => console.log("Server listening on 4040!"));
